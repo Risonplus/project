@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Graphic Design Business</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <div class="logo-container">
+        <img src="rlogo.png" alt="Logo" class="logo">
+        <h1>Products</h1>
+    </div>
+   <!-- Add this button for the mobile menu -->
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/portfolio/portfolio.html" target="_blank">portfolio</a></li>
+
+            <li><a href="#services">Services</a></li>
+            <li><a href="about-us.html" target="_blank">About Us</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Home Section -->
+<section id="home">
+    <div class="banner-container">
+        
+        <div class="banner-slides">
+            <img src="banner1.png" alt="Banner Image" class="banner-image active">
+            <img src="banner2.png" alt="Banner Image" class="banner-image">
+            <img src="banner3.png" alt="Banner Image" class="banner-image">
+            <img src="banner4.png" alt="Banner Image" class="banner-image">
+            <img src="banner5.png" alt="Banner Image" class="banner-image">
+        </div>
+        
+        <div class="slide-buttons">
+            <span class="slide-button" onclick="prevSlide()">&lt;</span>
+            <span class="slide-button" onclick="nextSlide()">&gt;</span>
+        </div>
+    </div>
+   
+</section>
+
+   
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service">
+        <h3>1.Static Website </h3>
+        <a href="/static website/website.html">Learn more</a>
+        
+    </div>
+    <div class="service">
+        <h3>2.Social Media Posts</h3>
+        <p>Engaging and visually appealing social media graphics tailored for your brand.</p>
+    </div>
+    <div class="service">
+        <h3>3.Business Cards</h3>
+        <p>Unique and professional business card designs that make a lasting impression.</p>
+    </div>
+    <div class="service">
+        <h3>4.Invitation Cards</h3>
+        <p>Custom invitation card designs for events, weddings, and special occasions.</p>
+    </div>
+    <div class="service">
+        <h3>5.Business logo </h3>
+        <p>Custom Business logo designs for your Business or social media account.</p>
+    </div>
+    <div class="service">
+        <h3>6.Others </h3>
+       
+    </div>
+</section>
+
+<!-- Responsive Back Button -->
+<button id="back-btn" onclick="goBack()">Back</button>
+
+
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <section id="contact"></section>
+        <div class="contact-us">
+            <h4>Contact Us</h4>
+            <p>Email: info@yourbusiness.com</p>
+            <p>Phone: +919262621383</p>
+        </div>
+       
+        <div class="follow-us">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>

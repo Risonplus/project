@@ -1,0 +1,341 @@
+/* Updated index.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f8;
+}
+
+
+
+header {
+    background-color: #0f0707;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 150px; /* Set the width of your logo */
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+
+nav {
+    background-color: #00ff0d;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: #eeeeee;
+    
+}
+/* Your existing styles */
+/* Your existing styles */
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Add these styles to your existing CSS */
+/* Add this CSS to adjust the mobile menu button */
+nav {
+    position: relative;
+}
+
+.menu-button {
+    display: none; /* Initially hide the menu button for larger screens */
+}
+
+/* Style the mobile menu button */
+.menu-button {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Media Query for showing the menu button on smaller screens */
+@media only screen and (max-width: 768px) {
+    .menu-button {
+        display: block; /* Show the menu button for smaller screens */
+    }
+
+    nav ul {
+        display: none; /* Hide the menu for larger screens */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #5c5b5b;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: block; /* Show the menu when the active class is present */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
+
+/* Responsive Back Button Styles */
+#back-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #21ff04;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background-color: #555;
+}
+/* ..........................................................*/
+
+section {
+    padding: 50px 20px;
+}
+
+.banner-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.banner-slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.slide-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-button {
+    font-size: 24px;
+    color: rgb(254, 255, 234);
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 600px) {
+    .about-text {
+        max-width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 2em;
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+}
+
+/* Services Section Styles */
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #050404;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    max-width: 50px;
+    height: auto;
+}
+
+.service h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.service p {
+    color: #666;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 600px) {
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-us,
+.follow-us {
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.contact-us h4,
+.follow-us h4 {
+    color: #ffcc00; /* Your brand color */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    color: #ddd;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.follow-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.follow-us a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.follow-us a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us,
+    .follow-us {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

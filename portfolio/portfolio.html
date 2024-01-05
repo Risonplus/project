@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <!-- Add your header content here -->
+</header>
+
+<!-- Navigation Button for Responsive Menu -->
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+
+<!-- Navigation Menu -->
+<nav id="main-nav">
+    <ul>
+        <li><a href="#branding">Branding</a></li>
+        <li><a href="#web-design">Web Design</a></li>
+        <li><a href="#print-materials">Print Materials</a></li>
+        <li><a href="#social-media">Social Media</a></li>
+        <li><a href="#business-cards">Business Cards</a></li>
+        <li><a href="#invitation-cards">Invitation Cards</a></li>
+        <li><a href="#logo-designs">Logo Designs</a></li>
+        <li><a href="#others">Others</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Each section for different branches -->
+    <section id="branding">
+        <!-- Branding projects here -->
+    </section>
+
+    <section id="web-design">
+        <!-- Web Design projects here -->
+    </section>
+
+    <!-- Add other sections here -->
+
+    <!-- Back Button -->
+    <button onclick="goBack()">Back to Main Page</button>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <!-- Footer content here -->
+</footer>
+
+<script src="portfolio.js"></script>
+
+<script>
+    function goBack() {
+        window.location.href = "/main/index.html"; // Replace "index.html" with the actual main page URL
+    }
+</script>
+
+</body>
+</html>
